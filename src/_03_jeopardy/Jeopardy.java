@@ -44,19 +44,20 @@ public class Jeopardy implements ActionListener {
 
 
 	public void run() {
-		JFrame frame = new JFrame();
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame f = new JFrame();
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		quizPanel = new JPanel();
-		frame.setLayout(new BorderLayout());
+		f.setLayout(new BorderLayout());
 
 		// 1. Make the frame show up
-
+		f.isVisible();
 		// 2. Give your frame a title
-
+		f.setName("Jeopardy");
 		// 3. Create a JPanel variable to hold the header using the createHeader method
-
+		JPanel p = new JPanel();
+		createHeader("The Dinosaurs");
 		// 4. Add the header component to the quizPanel
-
+		quizPanel.add(p);
 		// 5. Add the quizPanel to the frame
 
 		// 6. Use the createButton method to set the value of firstButton
@@ -82,10 +83,10 @@ public class Jeopardy implements ActionListener {
 		 * question
 		 */		
 		
-		frame.pack();
+		f.pack();
 		quizPanel.setLayout(new GridLayout(buttonCount + 1, 3));
-		frame.add(makeScorePanel(), BorderLayout.NORTH);
-		frame.setSize(Toolkit.getDefaultToolkit().getScreenSize().height,
+		f.add(makeScorePanel(), BorderLayout.NORTH);
+		f.setSize(Toolkit.getDefaultToolkit().getScreenSize().height,
 				Toolkit.getDefaultToolkit().getScreenSize().width);
 	}
 

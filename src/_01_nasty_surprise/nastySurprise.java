@@ -48,7 +48,8 @@ public static void main(String[] args) {
 }
 @Override
 public void actionPerformed(ActionEvent e) {
-	showPictureFromTheInternet("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwihq9Dc-LniAhUETd8KHRleDhAQjRx6BAgBEAU&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fface-swap&psig=AOvVaw1xZUBmZW2dumgjuZRLyn9A&ust=1558985623761193");
+	showPictureFromTheInternet("");
 	
+	showPictureFromTheInternet("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwitjrSFtefjAhVBb60KHaboDK4QjRx6BAgBEAQ&url=http%3A%2F%2Fwww.scaryforkids.com%2Ffunny-scary%2F&psig=AOvVaw0gxYdb7WF6K7M88oCjcdyj&ust=1564946042126941");
 }
 }
