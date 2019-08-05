@@ -18,6 +18,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.WindowConstants;
+
+import javafx.scene.input.KeyCode;
+
 import java.io.IOException;
 
 public class SimonSays extends KeyAdapter {
@@ -48,16 +52,20 @@ showImage();
 
 	public void keyPressed(KeyEvent e) {
 		// 15. Make a points variable to track the score.
-
+		int points = 0;
 		// 16. If the keyCode matches the imageIndex and "Simon says"
-
+		if (keCode == imageIndex && keyCode == "Simon says") {
+		
+		
 		// 17. Increase the value of score
-
+				points += 1;
+		
 		// 18. Use the speak method to tell the user they were correct
-
+		speak("You are correct!");
+		
 		// 19. If the keyCode doesn't match the imageIndex and "Simon didn't
 		// say..."
-
+		} else if ()
 		// 20. Increase the value of score
 
 		// 21. Use the speak method to tell the user they were correct
@@ -88,8 +96,8 @@ showImage();
 		// 9. Pack the frame
 		f.pack();
 		// 10. Set the defaultCloseOperation of your from to
-		 JFrame.EXIT_ON_CLOSE;
-		
+		 //f.EXIT_ON_CLOSE();
+		f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		// 11. Add a key listener to the frame
 		f.addKeyListener(this);
 		// 12. Create a new instance of Random
